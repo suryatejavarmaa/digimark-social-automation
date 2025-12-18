@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Environment variables (SENSITIVE - contains API keys!)
+.env
+.env.local
+.env.*.local
+
+# Build output
+build/
+dist/
+
+# Debug/Test files
+*.log
+tsc_output.txt
+test_output.txt
+server/test_results.txt
+server/available_models.txt
+server/model_names.txt
+
+# Large data files
+models.json
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db

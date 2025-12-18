@@ -1,0 +1,120 @@
+/* Custom styling for react-day-picker in dark theme */
+.schedule-calendar .rdp {
+  --rdp-cell-size: 40px;
+  --rdp-accent-color: #00d4ff;
+  --rdp-background-color: rgba(0, 212, 255, 0.1);
+  font-size: 0.875rem;
+}
+
+.schedule-calendar .rdp-months {
+  display: flex;
+  justify-content: center;
+}
+
+.schedule-calendar .rdp-month {
+  width: 100%;
+}
+
+.schedule-calendar .rdp-caption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0;
+  margin-bottom: 0.5rem;
+}
+
+.schedule-calendar .rdp-caption_label {
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.schedule-calendar .rdp-nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.schedule-calendar .rdp-nav_button {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.schedule-calendar .rdp-nav_button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(0, 212, 255, 0.3);
+}
+
+.schedule-calendar .rdp-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.schedule-calendar .rdp-head_cell {
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 500;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+}
+
+.schedule-calendar .rdp-cell {
+  text-align: center;
+  padding: 2px;
+}
+
+.schedule-calendar .rdp-day {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.7);
+  background: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.schedule-calendar .rdp-day:hover:not(.rdp-day_disabled):not(.rdp-day_selected) {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.schedule-calendar .rdp-day_selected {
+  background: linear-gradient(135deg, #00d4ff, #0099cc) !important;
+  color: white !important;
+  border-color: #00d4ff !important;
+  font-weight: 600;
+}
+
+.schedule-calendar .rdp-day_today:not(.rdp-day_selected) {
+  border-color: #00d4ff;
+  color: #00d4ff;
+  font-weight: 600;
+}
+
+.schedule-calendar .rdp-day_disabled {
+  color: rgba(255, 255, 255, 0.2);
+  cursor: not-allowed;
+}
+
+.schedule-calendar .rdp-day_disabled:hover {
+  background: transparent;
+  border-color: transparent;
+}
+
+.schedule-calendar .rdp-day_outside {
+  color: rgba(255, 255, 255, 0.2);
+}
